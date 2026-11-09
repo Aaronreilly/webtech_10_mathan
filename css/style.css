@@ -1,0 +1,291 @@
+
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f1;
+    color: #26382b;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #183d2b;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #b8e986;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #b8e986;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 400px;
+    background: linear-gradient(120deg, #183d2b, #527c50);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    max-width: 750px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Button */
+
+.btn {
+    background-color: #b8e986;
+    color: #183d2b;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* Sections */
+
+section {
+    padding: 55px 8%;
+    scroll-margin-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #183d2b;
+}
+
+.section-desc {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #687568;
+}
+
+/* Search Box */
+
+.search-box {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 13px;
+    border: 1px solid #b5c5ae;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Blog Cards */
+
+.blogs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card-image {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    background-color: #e2eedc;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card h3 {
+    color: #24583b;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #657365;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #367b48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Eco Tips */
+
+.tips {
+    background-color: #e7efdf;
+}
+
+.tips-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tip {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 230px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.tip span {
+    font-size: 35px;
+}
+
+.tip h3 {
+    color: #24583b;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+
+.about {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Contact Section */
+
+.contact {
+    background-color: #e7efdf;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #b5c5ae;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+#result {
+    color: #24583b;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #183d2b;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
